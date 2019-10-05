@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  title: MyString
+  employeenum: 1
+  manager_id: 1
+  gender: MyString
+  age: 1
+  race: MyString
+  email: MyString
+  check_in: false
+  check_in2: 1
+
+two:
+  name: MyString
+  title: MyString
+  employeenum: 1
+  manager_id: 1
+  gender: MyString
+  age: 1
+  race: MyString
+  email: MyString
+  check_in: false
+  check_in2: 1

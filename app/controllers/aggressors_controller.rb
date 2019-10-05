@@ -1,0 +1,2 @@
+class AggressorsController < ApplicationController
+end
