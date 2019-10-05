@@ -1,0 +1,2 @@
+Mackenzie: 2019-10-05: Scaffolded Company model, g resource Manager, Complaintant, Incident, Aggressor 
+
