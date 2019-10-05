@@ -1,7 +1,6 @@
 class CreateAggressors < ActiveRecord::Migration[5.2]
   def change
     create_table :aggressors do |t|
-      t.integer :employeenum
       t.integer :manager_id
       t.integer :issuecount
       t.string :name

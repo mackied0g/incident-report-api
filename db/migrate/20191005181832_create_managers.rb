@@ -3,7 +3,6 @@ class CreateManagers < ActiveRecord::Migration[5.2]
     create_table :managers do |t|
       t.string :name
       t.string :title
-      t.integer :employeenum
       t.string :gender
       t.integer :age
       t.string :race

@@ -3,7 +3,6 @@ class CreateComplaintants < ActiveRecord::Migration[5.2]
     create_table :complaintants do |t|
       t.string :name
       t.string :title
-      t.integer :employeenum
       t.integer :manager_id
       t.string :gender
       t.integer :age

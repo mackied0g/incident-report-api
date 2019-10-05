@@ -13,7 +13,6 @@
 ActiveRecord::Schema.define(version: 2019_10_05_183151) do
 
   create_table "aggressors", force: :cascade do |t|
-    t.integer "employeenum"
     t.integer "manager_id"
     t.integer "issuecount"
     t.string "name"
@@ -35,7 +34,6 @@ ActiveRecord::Schema.define(version: 2019_10_05_183151) do
   create_table "complaintants", force: :cascade do |t|
     t.string "name"
     t.string "title"
-    t.integer "employeenum"
     t.integer "manager_id"
     t.string "gender"
     t.integer "age"
@@ -63,7 +61,6 @@ ActiveRecord::Schema.define(version: 2019_10_05_183151) do
   create_table "managers", force: :cascade do |t|
     t.string "name"
     t.string "title"
-    t.integer "employeenum"
     t.string "gender"
     t.integer "age"
     t.string "race"
