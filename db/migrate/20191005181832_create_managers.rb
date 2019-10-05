@@ -8,7 +8,6 @@ class CreateManagers < ActiveRecord::Migration[5.2]
       t.integer :age
       t.string :race
       t.string :email
-      t.boolean :check_in
       t.integer :company_id
 
       t.timestamps

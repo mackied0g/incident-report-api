@@ -70,7 +70,6 @@ ActiveRecord::Schema.define(version: 2019_10_05_183151) do
     t.integer "age"
     t.string "race"
     t.string "email"
-    t.boolean "check_in"
     t.integer "company_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
