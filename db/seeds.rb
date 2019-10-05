@@ -2,15 +2,15 @@ nasa = Company.create(name: "NASA")
 ihop = Company.create(name: "IHOP")
 flatiron = Company.create(name: "Flatiron School")
 
-kevin = Manager.create(name: "Kevin Stursburg", title: "Regional Manager", employeenum: 000000, gender: "M", age: 42, race: "white", email: "kstursburg@nasa.gov", company_id: nasa.id)
-stella = Manager.create(name: "Stella Preston", title: "Manager of Sales", employeenum: 1231, gender: "F", age: 33, race: "white", email: "@nasa.gov", company_id: nasa.id)
-david = Manager.create(name: "David Wallace", title: "Regional Manager", employeenum: 000000, gender: "M", age: 42, race: "white", email: "dwallace@dundermifflin.com", company_id: nasa.id)
+kevin = Manager.create(name: "Kevin Stursburg", title: "Regional Manager", gender: "M", age: 42, race: "white", email: "kstursburg@nasa.gov", company_id: nasa.id)
+stella = Manager.create(name: "Stella Preston", title: "Manager of Sales", gender: "F", age: 33, race: "white", email: "@nasa.gov", company_id: nasa.id)
+david = Manager.create(name: "David Wallace", title: "Regional Manager", gender: "M", age: 42, race: "white", email: "dwallace@dundermifflin.com", company_id: nasa.id)
 
-sally = Complaintant.create(name: "Sally Greenswald", title: "Accounts Payable", employeenum: 123123, manager_id: kevin.id, gender: "F", age: 64, race: "hispanic", email: "sgreenswald@ihop.com", check_in: false, check_in2: false)
-jamal = Complaintant.create(name: "Jamal Brown", title: "Sr. Financial Adviser", employeenum: 456456, manager_id: kevin.id, gender: "M", age: 31, race: "black", email: "jbrown@canadaair.com", check_in: true, check_in2: false)
-naomi = Complaintant.create(name: "Naomi Vaarmark", title: "Assistant to the Regional Manager", employeenum: 789789, manager_id: kevin.id, gender: "NB", age: 23, race: "white", email: "nvaarmark@ihop.com", check_in: true, check_in2: true)
+sally = Complaintant.create(name: "Sally Greenswald", title: "Accounts Payable",  manager_id: kevin.id, gender: "F", age: 64, race: "hispanic", email: "sgreenswald@ihop.com", check_in: false, check_in2: false)
+jamal = Complaintant.create(name: "Jamal Brown", title: "Sr. Financial Adviser", manager_id: kevin.id, gender: "M", age: 31, race: "black", email: "jbrown@canadaair.com", check_in: true, check_in2: false)
+naomi = Complaintant.create(name: "Naomi Vaarmark", title: "Assistant to the Regional Manager", manager_id: kevin.id, gender: "NB", age: 23, race: "white", email: "nvaarmark@ihop.com", check_in: true, check_in2: true)
 
-amos = Aggressor.create(name: "Amos Lee",)
+amos = Aggressor.create(manager: kevin, issuecount: 3, name: "Amos Lee", title: "Accountant", gender: "M", age: 36, race: "white", email: "amos@lee.com")
 joey = Aggressor.create(name: "Joey Sativa")
 frank = Aggressor.create(name: "Frank Cifarelli")
 
