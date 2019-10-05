@@ -9,7 +9,6 @@ class CreateIncidents < ActiveRecord::Migration[5.2]
       t.datetime :datetime
       t.string :location
       t.string :witnesses
-      t.string :comments
       t.boolean :to_upper_namagement
 
       t.timestamps

@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 2019_10_05_183151) do
     t.string "race"
     t.string "email"
     t.boolean "check_in"
-    t.integer "check_in2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -56,7 +55,6 @@ ActiveRecord::Schema.define(version: 2019_10_05_183151) do
     t.datetime "datetime"
     t.string "location"
     t.string "witnesses"
-    t.string "comments"
     t.boolean "to_upper_namagement"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

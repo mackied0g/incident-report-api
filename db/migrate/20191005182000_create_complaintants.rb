@@ -10,7 +10,6 @@ class CreateComplaintants < ActiveRecord::Migration[5.2]
       t.string :race
       t.string :email
       t.boolean :check_in
-      t.integer :check_in2
 
       t.timestamps
     end
