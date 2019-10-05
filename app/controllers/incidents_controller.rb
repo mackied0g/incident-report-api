@@ -46,6 +46,6 @@ class IncidentsController < ApplicationController
   
       # Only allow a trusted parameter "white list" through.
       def incident_params
-        params(:incident).permit(:name, :title, :gender, :age, :race, :email, :company_id)
+        params(:incident).permit(:complaintant_id, :aggressor_id, :severity, :issuetype_id, :description, :datetime, :location, :witnesses, :to_upper_management)
       end
   end
