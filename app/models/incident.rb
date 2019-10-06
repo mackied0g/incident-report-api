@@ -9,6 +9,4 @@ class Incident < ApplicationRecord
     validates :description, presence: true
     validates :datetime, presence: true
     validates :location, presence: true
-    validates :comments, presence: true 
-    validates :to_upper_management, presence: true 
 end
