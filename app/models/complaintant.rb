@@ -6,7 +6,6 @@ class Complaintant < ApplicationRecord
     validates :manager_id, presence: true
     validates :email, presence: true
     validates :name, presence: true
-    validates :employeenum, presence: true
     validates :title, presence: true
     validates :gender, presence: true
     validates :age, presence: true

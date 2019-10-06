@@ -1,7 +1,7 @@
 class Aggressor < ApplicationRecord
     has_many :incidents
-
-    validates :employeenum, presence: true
+    belongs_to :manager
+    
     validates :manager_id, presence: true
     validates :issuecount, presence: true
     validates :name, presence: true
