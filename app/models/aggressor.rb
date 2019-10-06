@@ -1,5 +1,6 @@
 class Aggressor < ApplicationRecord
     has_many :incidents
+    has_many :complaintants, through: :incidents
     
     
     validates :issuecount, presence: true

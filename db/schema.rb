@@ -48,7 +48,6 @@ ActiveRecord::Schema.define(version: 2019_10_05_183151) do
     t.integer "complaintant_id"
     t.integer "aggressor_id"
     t.integer "severity"
-    t.integer "issuetype_id"
     t.string "description"
     t.datetime "datetime"
     t.string "location"
