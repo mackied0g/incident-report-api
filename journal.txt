@@ -1,2 +1,6 @@
 Mackenzie: 2019-10-05: Scaffolded Company model, g resource Manager, Complaintant, Incident, Aggressor 
+    I don't think I want to add employee number anymore... realistically only the person whose number it is knows what it is, and it's not a realiable way to differentiate between people. Email would be okay. 
+
+- I almost want to get rid of comments section of incidents as well, the description attribute would work just fine.
+
 

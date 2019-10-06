@@ -13,7 +13,6 @@
 ActiveRecord::Schema.define(version: 2019_10_05_183151) do
 
   create_table "aggressors", force: :cascade do |t|
-    t.integer "employeenum"
     t.integer "manager_id"
     t.integer "issuecount"
     t.string "name"
@@ -35,14 +34,12 @@ ActiveRecord::Schema.define(version: 2019_10_05_183151) do
   create_table "complaintants", force: :cascade do |t|
     t.string "name"
     t.string "title"
-    t.integer "employeenum"
     t.integer "manager_id"
     t.string "gender"
     t.integer "age"
     t.string "race"
     t.string "email"
     t.boolean "check_in"
-    t.integer "check_in2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -56,7 +53,6 @@ ActiveRecord::Schema.define(version: 2019_10_05_183151) do
     t.datetime "datetime"
     t.string "location"
     t.string "witnesses"
-    t.string "comments"
     t.boolean "to_upper_namagement"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -65,12 +61,10 @@ ActiveRecord::Schema.define(version: 2019_10_05_183151) do
   create_table "managers", force: :cascade do |t|
     t.string "name"
     t.string "title"
-    t.integer "employeenum"
     t.string "gender"
     t.integer "age"
     t.string "race"
     t.string "email"
-    t.boolean "check_in"
     t.integer "company_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
