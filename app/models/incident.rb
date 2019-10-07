@@ -1,7 +1,7 @@
 class Incident < ApplicationRecord
     belongs_to :complaintant
     belongs_to :aggressor
-    
+    has_one :manager, through: :complaintants
 
     # validates :complaintant_id, presence: true
     # validates :aggressor_id, presence: true
