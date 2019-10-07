@@ -16,13 +16,13 @@ sally = Complaintant.create(name: "Sally Greenswald", title: "Accounts Payable",
 jamal = Complaintant.create(name: "Jamal Brown", title: "Sr. Financial Adviser", manager_id: kevin.id, gender: "M", age: 31, race: "black", email: "jbrown@canadaair.com", check_in: true)
 naomi = Complaintant.create(name: "Naomi Vaarmark", title: "Assistant to the Regional Manager", manager_id: kevin.id, gender: "NB", age: 23, race: "white", email: "nvaarmark@ihop.com", check_in: true)
 
-amos = Aggressor.create(manager_id: 1, issuecount: 3, name: "Amos Lee", title: "Accountant", gender: "M", age: 36, race: "white", email: "amos@lee.com")
-joey = Aggressor.create(manager_id: 2, issuecount: 3, name: "Joey Sativa", title: "Sales Representative", gender: "M", age: 27, race: "asian", email: "joey@joey.com")
-frank = Aggressor.create(manager_id: 1, issuecount: 3, name: "Frank Donner", title: "receptionist", gender: "M", age: 30, race: "white", email: "frank@frank.edu")
+incident1 = Incident.create(complaintant_id: sally.id, aggressor_id: 1, severity: 7, description: "He made fun of my weight.", datetime: "05/14/1998 16:40:00", location: "water cooler", witnesses: "Lisa Frank and Ken Barba")
+incident2 = Incident.create(complaintant_id: sally.id, aggressor_id: 1, severity: 10, description: "He made me cry because he made fun of my dead dad.", datetime: "05/14/1998 16:40:00", location: "My office", witnesses: "Nobody")
+incident1 = Incident.create(complaintant_id: jamal.id, aggressor_id: 2, severity: 1, description: "He made a joke about poltics that made me uncomfortable.", datetime: "05/14/1998 16:40:00", location: "lunchroom", witnesses: "Will and Grace")
 
-incident1 = Incident.create(complaintant_id: sally.id, aggressor_id: amos.id, severity: 7, description: "He made fun of my weight.", datetime: "05/14/1998 16:40:00", location: "water cooler", witnesses: "Lisa Frank and Ken Barba")
-incident2 = Incident.create(complaintant_id: sally.id, aggressor_id: amos.id, severity: 10, description: "He made me cry because he made fun of my dead dad.", datetime: "05/14/1998 16:40:00", location: "My office", witnesses: "Nobody")
-incident1 = Incident.create(complaintant_id: jamal.id, aggressor_id: frank.id, severity: 1, description: "He made a joke about poltics that made me uncomfortable.", datetime: "05/14/1998 16:40:00", location: "lunchroom", witnesses: "Will and Grace")
+amos = Aggressor.create(manager_id: kevin.id, issuecount: 3, name: "Amos Lee", title: "Accountant", gender: "M", age: 36, race: "white", email: "amos@lee.com")
+joey = Aggressor.create(manager_id: stella.id, issuecount: 3, name: "Joey Sativa", title: "Sales Representative", gender: "M", age: 27, race: "asian", email: "joey@joey.com")
+rebecca = Aggressor.create(manager_id: kevin.id, issuecount: 3, name: "Rebecca Donner", title: "Phys Ed. Teacher", gender: "F", age: 30, race: "white", email: "frank@frank.edu")
 
 
 

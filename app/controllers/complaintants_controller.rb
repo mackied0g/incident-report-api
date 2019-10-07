@@ -46,7 +46,7 @@ class ComplaintantsController < ApplicationController
   
       # Only allow a trusted parameter "white list" through.
       def complaintant_params
-        params.require(:complaintant).permit(:name)
+        params.require(:complaintant).permit(:name, :title, :manager_id, :gender, :age, :race, :email, :check_in)
       end
   end
   
