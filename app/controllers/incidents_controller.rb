@@ -3,7 +3,6 @@ class IncidentsController < ApplicationController
 
     def index
       @incidents = Incident.all
-  
       render json: @incidents
     end
   
