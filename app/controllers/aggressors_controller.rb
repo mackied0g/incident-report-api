@@ -46,7 +46,7 @@ class AggressorsController < ApplicationController
   
       # Only allow a trusted parameter "white list" through.
       def aggressor_params
-        params.require(:aggressor).permit(:name)
+        params.require(:aggressor).permit(:manager_id, :issuecount, :name, :title, :gender, :age, :race, :email)
       end
   end
   

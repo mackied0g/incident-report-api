@@ -1,22 +1,18 @@
 class IncidentsController < ApplicationController
     before_action :set_incident, only: [:show, :update, :destroy]
 
-    # GET /Incidents
     def index
       @incidents = Incident.all
-  
       render json: @incidents
     end
   
-    # GET /incidents/1
     def show
       render json: @incident
     end
-  
-    # POST /incidents
+
     def create
       @incident = Incident.create(incident_params)
-  
+      
       if @incident.save
         render json: @incident, status: :created, location: @incident
       else
@@ -24,7 +20,6 @@ class IncidentsController < ApplicationController
       end
     end
   
-    # PATCH/PUT /incidents/1
     def update
       if @incident.update(incident_params)
         render json: @incident
@@ -33,7 +28,6 @@ class IncidentsController < ApplicationController
       end
     end
   
-    # DELETE /incidents/1
     def destroy
       @incident.destroy
     end
@@ -46,6 +40,6 @@ class IncidentsController < ApplicationController
   
       # Only allow a trusted parameter "white list" through.
       def incident_params
-        params(:incident).permit(:complaintant_id, :aggressor_id, :severity, :issuetype_id, :description, :datetime, :location, :witnesses, :to_upper_management)
+        params(:incident).permit(:complaintant_id, :aggressor_id, :severity, :description, :datetime, :location, :witnesses)
       end
   end
