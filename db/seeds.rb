@@ -21,7 +21,7 @@ amos = Aggressor.create(manager_id: kevin.id, issuecount: 3, name: "Amos Lee", t
 joey = Aggressor.create(manager_id: stella.id, issuecount: 3, name: "Joey Sativa", title: "Sales Representative", gender: "M", age: 27, race: "asian", email: "joey@joey.com")
 rebecca = Aggressor.create(manager_id: kevin.id, issuecount: 3, name: "Rebecca Donner", title: "Phys Ed. Teacher", gender: "F", age: 30, race: "white", email: "frank@frank.edu")
 
-incident1 = Incident.create(complaintant_id: sally.id, aggressor_id: amos.id, severity: 7, description: "He made fun of my weight.", location: "water cooler", witnesses: "Lisa Frank and Ken Barba")
+incident1 = Incident.create(complaintant_id: sally.id, aggressor_id: amos.id, severity: 7, description: "He made fun of my weight.", datetime: "05-04-2019 15:44:23", location: "water cooler", witnesses: "Lisa Frank and Ken Barba")
 incident2 = Incident.create(complaintant_id: sally.id, aggressor_id: amos.id, severity: 10, description: "He made me cry because he made fun of my Pokemon collection.", datetime: "05/14/1998 16:40:00", location: "My office", witnesses: "Nobody")
 incident1 = Incident.create(complaintant_id: sally.id, aggressor_id: amos.id, severity: 1, description: "He made a joke about poltics that made me uncomfortable.", datetime: "05/14/1998 16:40:00", location: "lunchroom", witnesses: "Will and Grace")
 
