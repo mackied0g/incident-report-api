@@ -1,5 +1,6 @@
 class Complaintant < ApplicationRecord
     belongs_to :manager
+    has_one :company, through: :manager
     has_many :incidents
     has_many :aggressors, through: :incidents
 
